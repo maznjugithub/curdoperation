@@ -1,0 +1,16 @@
+﻿@{
+	ViewData["Title"] = "Edit";
+}
+
+
+<form asp-controller="Teacher" asp-action="Update"  asp-route-id="@ViewBag.id" asp-route-name="name" asp-route-address="address"> 
+	<label for="Name"> Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="Name" value=@ViewBag.name><br>
+  <span style "color:red"> @ViewBag.errorname</span>
+  <br />
+  <label for="laddress">Address:</label><br>
+  <input type="text" id="address" name="Address" placeholder="Address" value=@ViewBag.address><br><br>
+  <button type="Submit" class="btn btn-success" >Save</button>
+</form>
+
+

@@ -1,0 +1,8 @@
+D:\SampleProjects\Demo5\Demo5\obj\Release\net6.0\Demo5.csproj.AssemblyReference.cache
+D:\SampleProjects\Demo5\Demo5\obj\Release\net6.0\Demo5.GeneratedMSBuildEditorConfig.editorconfig
+D:\SampleProjects\Demo5\Demo5\obj\Release\net6.0\Demo5.AssemblyInfoInputs.cache
+D:\SampleProjects\Demo5\Demo5\obj\Release\net6.0\Demo5.AssemblyInfo.cs
+D:\SampleProjects\Demo5\Demo5\obj\Release\net6.0\Demo5.csproj.CoreCompileInputs.cache
+D:\SampleProjects\Demo5\Demo5\obj\Release\net6.0\Demo5.MvcApplicationPartsAssemblyInfo.cache
+D:\SampleProjects\Demo5\Demo5\obj\Release\net6.0\Demo5.RazorAssemblyInfo.cache
+D:\SampleProjects\Demo5\Demo5\obj\Release\net6.0\Demo5.RazorAssemblyInfo.cs

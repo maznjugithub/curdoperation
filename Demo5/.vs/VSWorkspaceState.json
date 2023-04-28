@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Demo5",
+    "\\Demo5\\Controllers",
+    "\\Demo5\\Dataacess",
+    "\\Demo5\\Dataacess\\Entities",
+    "\\Demo5\\Views",
+    "\\Demo5\\Views\\Book",
+    "\\Demo5\\Views\\Shared",
+    "\\Demo5\\Views\\Student",
+    "\\Demo5\\Views\\Teacher"
+  ],
+  "SelectedNode": "\\Demo5\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

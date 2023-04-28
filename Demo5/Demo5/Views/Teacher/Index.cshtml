@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+	  <title>Title of the document</title>
+   </head>
+  <style>
+	  #Teachertable th{
+		  background-color: green;
+  color: white;
+	  }
+  </style>
+   <body>
+	   <form asp-controller="Teacher" asp-action="Add"> 
+
+		   <button type="submit" class="btn btn-primary" >Add</button>
+
+	   </form>
+
+	   <table  class="table table-bordered border-primary" id="Teachertable">
+		  
+		 <thead> 
+	         <tr>
+		 <th>Name</th>
+		  
+		 <th>Address</th>
+		 <th> Action </th>	
+	         </tr>
+		 </thead>
+		@for (int i = 0; i < ViewBag.Teacher.Count; i++)
+		{
+					<tbody> 
+						   <tr>
+							   <td>
+						@ViewBag.Teacher[i].Name
+							   </td>
+							   <td>
+						@ViewBag.Teacher[i].Address
+							   </td>
+
+							   <td>
+						<a type="Button" class="btn btn-success" asp-controller="Teacher" asp-action="Edit" asp-route-id="@ViewBag.Teacher[i].Id">Edit</a>
+										@*<a type="Button" class="btn btn-danger" asp-controller="Teacher" asp-action="Delete" asp-route-id="@ViewBag.Teacher[i].Id" >Delete</a>*@
+										@Html.ActionLink("Delete","Delete","Teacher",new{ViewBag.Teacher[i].Id},new{@class="btn btn-danger",onclick="return confirm ('Do You Really Want To Delete?')"})
+
+							   </td>
+
+						   </tr>
+				    </tbody>
+		}
+   </table>
+   </body>
+</html>

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <title>Title of the document</title>
+   </head>
+   <body>
+       <form asp-controller="Class" asp-action="Add"> 
+           <button type="submit" class="btn btn-primary" >Add</button>
+
+       </form>
+       <style>
+      #classtable th{
+          background-color:lightblue;
+  color: white;
+      }
+  </style>
+     <table class="table table-bordered border-primary" id =classtable >
+      <tr>
+          <thead>
+              <th>Name</th>
+              <th>ClassRoom</th>
+              <th>Capacity </th>
+               <th> Action </th>
+          </tr>
+        </thead>
+
+        @foreach (var classobj in ViewBag.Class)
+      {
+                  <tbody> 
+                           <tr>
+                               <td>
+                        @classobj.Name
+                               </td>
+                               <td>
+                        @classobj.ClassRoom
+                               </td>
+                           
+                           <td>
+                               @classobj.Capacity
+                           </td>
+                               <td>
+                        <a type="Button" class="btn btn-success" asp-controller="Classobj" asp-action="Edit" asp-route-id="@classobj.Id">Edit</a>
+                                        @*<a type="Button" class="btn btn-danger" asp-controller="Class" asp-action="Delete" asp-route-id="@classobj.Id" >Delete</a>*@
+                                       
+                    @Html.ActionLink("Delete","Delete","Class",new{ViewBag.Class},new{@class="btn btn-danger",onclick="return confirm('Do you really want to delete?')"})
+                                      
+
+                               </td>
+                           </tr>
+                  </tbody>
+      }
+   </table>
+   </body>
+</html>
+
+         
+

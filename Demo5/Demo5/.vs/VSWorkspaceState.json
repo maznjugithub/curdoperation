@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\Dataacess",
+    "\\Dataacess\\Entities",
+    "\\Models"
+  ],
+  "SelectedNode": "\\Dataacess\\AppDbContext.cs",
+  "PreviewInSolutionExplorer": false
+}

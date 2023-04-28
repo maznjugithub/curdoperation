@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <title>Title of the document</title>
+   </head>
+   <body>
+       <form asp-controller="Book" asp-action="Add"> 
+           <button type="submit" class="btn btn-primary" >Add</button>
+
+       </form>
+       <style>
+      #Booktable th{
+          background-color:pink;
+  color: white;
+      }
+  </style>
+       <table class="table table-bordered border-primary" id = Booktable>
+      <tr>
+          <thead>
+              <th>Name</th>
+              <th>WriterName</th>
+               <th>Action</th>
+       </tr> 
+
+        </thead>
+          @foreach( var book in ViewBag.Books)
+		{
+				<tbody> 
+					   <tr>
+						   <td>
+								   @book.Name
+						   </td>
+						   <td>
+								   @book.WriterName
+						   </td>
+                           <td>
+                                   <a type="Button" class="btn btn-success" asp-controller="Book" asp-action="Edit" asp-route-id="@book.Id" >Edit</a>|
+
+                                       @*<a type="Button" class="btn btn-danger" asp-controller="Book" asp-action="Delete" asp-route-id="@book.Id" >Delete</a>*@
+                        @Html.ActionLink("Delete","Delete","Book",new{ViewBag.Books},new{@class="btn btn-danger",onclick="return confirm('Do you really want to delete?')"})
+
+                           </td>
+                       
+					   </tr>
+			    </tbody>
+        }
+ </table>
+   </body>
+</html>

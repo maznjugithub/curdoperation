@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Demo5",
+    "\\Demo5\\Demo5",
+    "\\Demo5\\Demo5\\Controllers",
+    "\\Demo5\\Demo5\\obj",
+    "\\Demo5\\Demo5\\Views",
+    "\\Demo5\\Demo5\\wwwroot",
+    "\\Teacher"
+  ],
+  "SelectedNode": "\\Demo5\\Demo5\\Controllers\\BookController.cs",
+  "PreviewInSolutionExplorer": false
+}
